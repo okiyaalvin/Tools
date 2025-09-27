@@ -1,0 +1,6 @@
+[2025-09-26 22:29:07] Target: 192.168.100.1
+[2025-09-26 22:29:07] Evidence dir: Evidence/192.168.100.1/2025-09-26/threat_analysis
+[2025-09-26 22:29:31] [*] apt install nuclei failed or not available
+[2025-09-26 22:29:31] [*] Querying GitHub Releases API for latest nuclei release...
+[2025-09-26 22:29:32] [*] Found nuclei asset: https://github.com/projectdiscovery/nuclei/releases/download/v3.4.10/nuclei_3.4.10_linux_amd64.zip
+[2025-09-26 22:30:21] [✓] nuclei installed to /usr/local/bin/nuclei

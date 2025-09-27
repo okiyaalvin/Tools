@@ -1,0 +1,9 @@
+=== OpenBash Pentesting Tools - Threat modeling & Vulnerability analysis ===
+[2025-09-26 21:26:19] Start: 2025-09-26 21:26:19
+[2025-09-26 21:26:19] Log file: logs/net_threat_vuln_20250926-212619.log
+[2025-09-26 21:26:30] Pre-check OK: Signed RoE/authorization
+[2025-09-26 21:26:30] Pre-check OK: Approved target list (IP/CIDR/domain)
+[2025-09-26 21:26:31] Pre-check OK: Approved test windows
+[2025-09-26 21:26:33] Target: y
+[2025-09-26 21:26:33] Evidence dir: Evidence/y/2025-09-26/threat_analysis
+[2025-09-26 21:26:59] Finished: 2025-09-26 21:26:59

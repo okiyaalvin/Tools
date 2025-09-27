@@ -1,0 +1,4 @@
+# Nmap 7.95 scan initiated Fri Sep 26 23:12:05 2025 as: /usr/lib/nmap/nmap --script vuln -sV -oA Evidence/192.168.100.1/2025-09-26/threat_analysis/nmap_vuln_192.168.100.1_231205 192.168.100.1
+Host: 192.168.100.1 ()	Status: Up
+Host: 192.168.100.1 ()	Ports: 23/open/tcp//telnet//Huawei Home Gateway telnetd/, 53/open/tcp//domain//(generic dns response: REFUSED)/, 80/open/tcp//ssl|http///	Ignored State: filtered (997)
+# Nmap done at Fri Sep 26 23:14:25 2025 -- 1 IP address (1 host up) scanned in 140.40 seconds

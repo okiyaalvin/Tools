@@ -1,0 +1,3 @@
+[2025-09-26 21:43:46] Target: y
+[2025-09-26 21:43:46] Evidence dir: Evidence/y/2025-09-26/threat_analysis
+[2025-09-26 22:25:20] [*] Installing: sudo apt update && sudo apt install -y lynis || true

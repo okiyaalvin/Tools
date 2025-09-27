@@ -1,0 +1,3 @@
+Version: [32m2.1.5[0m
+OpenSSL 3.5.1 1 Jul 2025
+[0m

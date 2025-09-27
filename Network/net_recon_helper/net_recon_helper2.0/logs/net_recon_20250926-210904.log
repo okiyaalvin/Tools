@@ -1,0 +1,15 @@
+=== OpenBash Pentesting Tools - net_recon_helper v2.0 ===
+[2025-09-26 21:09:04] Start: 2025-09-26 21:09:04
+[2025-09-26 21:09:04] Log file: logs/net_recon_20250926-210904.log
+
+[2025-09-26 21:09:20] ROE: OK - Signed Rules of Engagement (RoE)
+[2025-09-26 21:09:27] ROE: OK - Signed Client Consent
+[2025-09-26 21:09:30] ROE: OK - Approved target list (IPs/CIDRs/domains)
+[2025-09-26 21:09:34] ROE: OK - Approved test windows
+[2025-09-26 21:09:36] ROE: OK - Backup/snapshot confirmation for critical systems
+[2025-09-26 21:09:39] ROE: OK - Emergency contact list (phone/email)
+[+] Pre-engagement checklist confirmed.
+[2025-09-26 21:09:53] Target: 192.168.100.1
+[2025-09-26 21:09:53] Evidence path: Evidence/192.168.100.1/2025-09-26
+
+[2025-09-26 21:10:33] Target: 192.168.100.1 | Tool: nikto | Cmd: sudo nikto -h "https://192.168.100.1" -o "Evidence/192.168.100.1/2025-09-26/nikto_192.168.100.1.txt" | Out: Evidence/192.168.100.1/2025-09-26/nikto_192.168.100.1.txt

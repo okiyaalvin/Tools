@@ -1,0 +1,1 @@
+[2025-09-26 15:16:59] Target: 192.168.100.0/24 | Tool: nmap | Command: sudo nmap -sV -T3 -Pn 192.168.100.0/24 -oA nmap_192.168.100.0_24 | Output: nmap_192.168.100.0_24.*

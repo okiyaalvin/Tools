@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.95 scan initiated Fri Sep 26 16:32:17 2025 as: /usr/lib/nmap/nmap -vvv -p 23,53,80,17998,37444,37443 -4 -sV -A -oA Evidence/192.168.100.1/2025-09-26/rustscan_192.168.100.1 192.168.100.1 -->
+<nmaprun scanner="nmap" args="/usr/lib/nmap/nmap -vvv -p 23,53,80,17998,37444,37443 -4 -sV -A -oA Evidence/192.168.100.1/2025-09-26/rustscan_192.168.100.1 192.168.100.1" start="1758893537" startstr="Fri Sep 26 16:32:17 2025" version="7.95" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="6" services="23,53,80,17998,37443-37444"/>
+<verbose level="3"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1758893537"/>
+<taskend task="NSE" time="1758893537"/>
+<taskbegin task="NSE" time="1758893537"/>
+<taskend task="NSE" time="1758893537"/>
+<taskbegin task="NSE" time="1758893537"/>
+<taskend task="NSE" time="1758893537"/>
+<taskbegin task="Ping Scan" time="1758893537"/>
+<hosthint><status state="up" reason="unknown-response" reason_ttl="0"/>
+<address addr="192.168.100.1" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<taskend task="Ping Scan" time="1758893537" extrainfo="1 total hosts"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1758893537"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1758893551"/>
+<taskbegin task="SYN Stealth Scan" time="1758893551"/>
+<taskend task="SYN Stealth Scan" time="1758893551" extrainfo="6 total ports"/>
+<taskbegin task="Service scan" time="1758893551"/>
+<taskend task="Service scan" time="1758893588" extrainfo="6 services on 1 host"/>
+<taskbegin task="Traceroute" time="1758893592"/>
+<taskend task="Traceroute" time="1758893592"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1758893592"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1758893596"/>
+<taskbegin task="NSE" time="1758893597"/>
+<taskend task="NSE" time="1758893610"/>
+<taskbegin task="NSE" time="1758893610"/>
+<taskend task="NSE" time="1758893612"/>
+<taskbegin task="NSE" time="1758893612"/>
+<taskend task="NSE" time="1758893612"/>
+<host starttime="1758893551" endtime="1758893612"><status state="up" reason="reset" reason_ttl="255"/>
+<address addr="192.168.100.1" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="23"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="telnet" product="Huawei Home Gateway telnetd" devicetype="broadband router" method="probed" conf="10"/></port>
+<port protocol="tcp" portid="53"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="domain" product="Unbound" method="probed" conf="10"><cpe>cpe:/a:nlnetlabs:unbound</cpe></service></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="http" tunnel="ssl" method="probed" conf="10"/><script id="http-methods" output="&#xa;  Supported Methods: GET POST"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>POST</elem>
+</table>
+</script><script id="http-title" output="Site doesn&apos;t have a title (text/html)."><elem key="title"></elem>
+</script><script id="ssl-cert" output="Subject: commonName=Huawei Technologies Co., Ltd/organizationName=Huawei Technologies Co., Ltd/stateOrProvinceName=Guangdong/countryName=CN/organizationalUnitName=ONT/emailAddress=support@huawei.com&#xa;Issuer: commonName=Huawei Technologies Co., Ltd/organizationName=Huawei Technologies Co., Ltd/stateOrProvinceName=Guangdong/countryName=CN/emailAddress=support@huawei.com&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2014-12-05T10:33:44&#xa;Not valid after:  2024-12-04T10:33:44&#xa;MD5:   67e9:299f:4c54:6c23:cd0e:97ec:cee1:f7d0&#xa;SHA-1: 80a2:8e9e:1ac0:6b24:f2cf:9ecd:65bf:f523:0da3:110e&#xa;-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIDvDCCAqSgAwIBAgIBAjANBgkqhkiG9w0BAQsFADCBkjElMCMGA1UEAxMcSHVh&#xa;d2VpIFRlY2hub2xvZ2llcyBDby4sIEx0ZDESMBAGA1UECBMJR3Vhbmdkb25nMQsw&#xa;CQYDVQQGEwJDTjEhMB8GCSqGSIb3DQEJARYSc3VwcG9ydEBodWF3ZWkuY29tMSUw&#xa;IwYDVQQKExxIdWF3ZWkgVGVjaG5vbG9naWVzIENvLiwgTHRkMB4XDTE0MTIwNTEw&#xa;MzM0NFoXDTI0MTIwNDEwMzM0NFowgaAxJTAjBgNVBAMTHEh1YXdlaSBUZWNobm9s&#xa;b2dpZXMgQ28uLCBMdGQxEjAQBgNVBAgTCUd1YW5nZG9uZzELMAkGA1UEBhMCQ04x&#xa;ITAfBgkqhkiG9w0BCQEWEnN1cHBvcnRAaHVhd2VpLmNvbTElMCMGA1UEChMcSHVh&#xa;d2VpIFRlY2hub2xvZ2llcyBDby4sIEx0ZDEMMAoGA1UECxMDT05UMIIBIjANBgkq&#xa;hkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp39I6ZpxAm+7xvN3YKwCycbUiurtXEKm&#xa;EvMDBHz9jjPIuhzSvRXXRoJfdvdabY0LltN0gzOjhBw4dwHnKGstuiOWDnVbIgf5&#xa;WbNi7w+ZqPDWwnGQVapTkJHPeTLYZhTdCGLZPoi89a2PG8982MGs/0zuTJX91dSk&#xa;zLKfI7H/IAZN48OwcPiw05T26mZFFHsgAP02adKocEa/0TxOMgbGtFq11eAeI1Ba&#xa;vJqQM/aXEgndY5AGkMIuRhOO7TpeMMLc+1z6Frt1wn31smeflC63AX3Qd+covREo&#xa;HlyBtHRufGd+/mSOAUo7f1FDKpOO5KlovE6ulDOUKYWH7zhkWl9DOwIDAQABow0w&#xa;CzAJBgNVHRMEAjAAMA0GCSqGSIb3DQEBCwUAA4IBAQCMGRy+fnQFa0jhK4NDBK6T&#xa;mmkeHq5vcx/CHi4easVlyCjIbyjaSdaX/GMnWarfOaQ0nzKi0WYpH4T7UUmchFYq&#xa;/RfU4E2/XeNOSJZ0v4D0JV5yOERTwASF5ocS98tdsGN+SKjSwd2wr1EM7k/aN8zF&#xa;ju3pbYG0VdJ+dVMMCKYtdWZFxZm0gAE6X0+vZhOzXgvzv0bpodgFBWKZcKEGwyWY&#xa;dxhti2xxELzsmAGhv45Rw0VEwWHMIYPzEFfavu7c2JRwikKYZPhA+2pKpgSZF6s2&#xa;Iza78UY82Jz8a6LN9I0n7vbbD2I50nzNQo066VAXdp7mIXAW3dSoKFp/gD24gxkq&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;"><table key="subject">
+<elem key="commonName">Huawei Technologies Co., Ltd</elem>
+<elem key="countryName">CN</elem>
+<elem key="emailAddress">support@huawei.com</elem>
+<elem key="organizationName">Huawei Technologies Co., Ltd</elem>
+<elem key="organizationalUnitName">ONT</elem>
+<elem key="stateOrProvinceName">Guangdong</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">Huawei Technologies Co., Ltd</elem>
+<elem key="countryName">CN</elem>
+<elem key="emailAddress">support@huawei.com</elem>
+<elem key="organizationName">Huawei Technologies Co., Ltd</elem>
+<elem key="stateOrProvinceName">Guangdong</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">2048</elem>
+<elem key="modulus">A77F48E99A71026FBBC6F37760AC02C9C6D48AEAED5C42A612F303047CFD8E33C8BA1CD2BD15D746825F76F75A6D8D0B96D3748333A3841C387701E7286B2DBA23960E755B2207F959B362EF0F99A8F0D6C2719055AA539091CF7932D86614DD0862D93E88BCF5AD8F1BCF7CD8C1ACFF4CEE4C95FDD5D4A4CCB29F23B1FF20064DE3C3B070F8B0D394F6EA6645147B2000FD3669D2A87046BFD13C4E3206C6B45AB5D5E01E23505ABC9A9033F6971209DD63900690C22E46138EED3A5E30C2DCFB5CFA16BB75C27DF5B2679F942EB7017DD077E728BD11281E5C81B4746E7C677EFE648E014A3B7F51432A938EE4A968BC4EAE943394298587EF38645A5F433B</elem>
+<elem key="exponent">65537</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="value">CA:FALSE</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2014-12-05T10:33:44</elem>
+<elem key="notAfter">2024-12-04T10:33:44</elem>
+</table>
+<elem key="md5">67e9299f4c546c23cd0e97eccee1f7d0</elem>
+<elem key="sha1">80a28e9e1ac06b24f2cf9ecd65bff5230da3110e</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIDvDCCAqSgAwIBAgIBAjANBgkqhkiG9w0BAQsFADCBkjElMCMGA1UEAxMcSHVh&#xa;d2VpIFRlY2hub2xvZ2llcyBDby4sIEx0ZDESMBAGA1UECBMJR3Vhbmdkb25nMQsw&#xa;CQYDVQQGEwJDTjEhMB8GCSqGSIb3DQEJARYSc3VwcG9ydEBodWF3ZWkuY29tMSUw&#xa;IwYDVQQKExxIdWF3ZWkgVGVjaG5vbG9naWVzIENvLiwgTHRkMB4XDTE0MTIwNTEw&#xa;MzM0NFoXDTI0MTIwNDEwMzM0NFowgaAxJTAjBgNVBAMTHEh1YXdlaSBUZWNobm9s&#xa;b2dpZXMgQ28uLCBMdGQxEjAQBgNVBAgTCUd1YW5nZG9uZzELMAkGA1UEBhMCQ04x&#xa;ITAfBgkqhkiG9w0BCQEWEnN1cHBvcnRAaHVhd2VpLmNvbTElMCMGA1UEChMcSHVh&#xa;d2VpIFRlY2hub2xvZ2llcyBDby4sIEx0ZDEMMAoGA1UECxMDT05UMIIBIjANBgkq&#xa;hkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp39I6ZpxAm+7xvN3YKwCycbUiurtXEKm&#xa;EvMDBHz9jjPIuhzSvRXXRoJfdvdabY0LltN0gzOjhBw4dwHnKGstuiOWDnVbIgf5&#xa;WbNi7w+ZqPDWwnGQVapTkJHPeTLYZhTdCGLZPoi89a2PG8982MGs/0zuTJX91dSk&#xa;zLKfI7H/IAZN48OwcPiw05T26mZFFHsgAP02adKocEa/0TxOMgbGtFq11eAeI1Ba&#xa;vJqQM/aXEgndY5AGkMIuRhOO7TpeMMLc+1z6Frt1wn31smeflC63AX3Qd+covREo&#xa;HlyBtHRufGd+/mSOAUo7f1FDKpOO5KlovE6ulDOUKYWH7zhkWl9DOwIDAQABow0w&#xa;CzAJBgNVHRMEAjAAMA0GCSqGSIb3DQEBCwUAA4IBAQCMGRy+fnQFa0jhK4NDBK6T&#xa;mmkeHq5vcx/CHi4easVlyCjIbyjaSdaX/GMnWarfOaQ0nzKi0WYpH4T7UUmchFYq&#xa;/RfU4E2/XeNOSJZ0v4D0JV5yOERTwASF5ocS98tdsGN+SKjSwd2wr1EM7k/aN8zF&#xa;ju3pbYG0VdJ+dVMMCKYtdWZFxZm0gAE6X0+vZhOzXgvzv0bpodgFBWKZcKEGwyWY&#xa;dxhti2xxELzsmAGhv45Rw0VEwWHMIYPzEFfavu7c2JRwikKYZPhA+2pKpgSZF6s2&#xa;Iza78UY82Jz8a6LN9I0n7vbbD2I50nzNQo066VAXdp7mIXAW3dSoKFp/gD24gxkq&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="ssl-date" output="TLS randomness does not represent time"></script></port>
+<port protocol="tcp" portid="17998"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="unknown" tunnel="ssl" method="table" conf="3"/><script id="ssl-cert" output="Subject: commonName=Huawei Technologies Co., Ltd/organizationName=Huawei Technologies Co., Ltd/stateOrProvinceName=Guangdong/countryName=CN/organizationalUnitName=ONT/emailAddress=support@huawei.com&#xa;Issuer: commonName=Huawei Technologies Co., Ltd/organizationName=Huawei Technologies Co., Ltd/stateOrProvinceName=Guangdong/countryName=CN/emailAddress=support@huawei.com&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2014-12-05T10:33:44&#xa;Not valid after:  2024-12-04T10:33:44&#xa;MD5:   67e9:299f:4c54:6c23:cd0e:97ec:cee1:f7d0&#xa;SHA-1: 80a2:8e9e:1ac0:6b24:f2cf:9ecd:65bf:f523:0da3:110e&#xa;-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIDvDCCAqSgAwIBAgIBAjANBgkqhkiG9w0BAQsFADCBkjElMCMGA1UEAxMcSHVh&#xa;d2VpIFRlY2hub2xvZ2llcyBDby4sIEx0ZDESMBAGA1UECBMJR3Vhbmdkb25nMQsw&#xa;CQYDVQQGEwJDTjEhMB8GCSqGSIb3DQEJARYSc3VwcG9ydEBodWF3ZWkuY29tMSUw&#xa;IwYDVQQKExxIdWF3ZWkgVGVjaG5vbG9naWVzIENvLiwgTHRkMB4XDTE0MTIwNTEw&#xa;MzM0NFoXDTI0MTIwNDEwMzM0NFowgaAxJTAjBgNVBAMTHEh1YXdlaSBUZWNobm9s&#xa;b2dpZXMgQ28uLCBMdGQxEjAQBgNVBAgTCUd1YW5nZG9uZzELMAkGA1UEBhMCQ04x&#xa;ITAfBgkqhkiG9w0BCQEWEnN1cHBvcnRAaHVhd2VpLmNvbTElMCMGA1UEChMcSHVh&#xa;d2VpIFRlY2hub2xvZ2llcyBDby4sIEx0ZDEMMAoGA1UECxMDT05UMIIBIjANBgkq&#xa;hkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp39I6ZpxAm+7xvN3YKwCycbUiurtXEKm&#xa;EvMDBHz9jjPIuhzSvRXXRoJfdvdabY0LltN0gzOjhBw4dwHnKGstuiOWDnVbIgf5&#xa;WbNi7w+ZqPDWwnGQVapTkJHPeTLYZhTdCGLZPoi89a2PG8982MGs/0zuTJX91dSk&#xa;zLKfI7H/IAZN48OwcPiw05T26mZFFHsgAP02adKocEa/0TxOMgbGtFq11eAeI1Ba&#xa;vJqQM/aXEgndY5AGkMIuRhOO7TpeMMLc+1z6Frt1wn31smeflC63AX3Qd+covREo&#xa;HlyBtHRufGd+/mSOAUo7f1FDKpOO5KlovE6ulDOUKYWH7zhkWl9DOwIDAQABow0w&#xa;CzAJBgNVHRMEAjAAMA0GCSqGSIb3DQEBCwUAA4IBAQCMGRy+fnQFa0jhK4NDBK6T&#xa;mmkeHq5vcx/CHi4easVlyCjIbyjaSdaX/GMnWarfOaQ0nzKi0WYpH4T7UUmchFYq&#xa;/RfU4E2/XeNOSJZ0v4D0JV5yOERTwASF5ocS98tdsGN+SKjSwd2wr1EM7k/aN8zF&#xa;ju3pbYG0VdJ+dVMMCKYtdWZFxZm0gAE6X0+vZhOzXgvzv0bpodgFBWKZcKEGwyWY&#xa;dxhti2xxELzsmAGhv45Rw0VEwWHMIYPzEFfavu7c2JRwikKYZPhA+2pKpgSZF6s2&#xa;Iza78UY82Jz8a6LN9I0n7vbbD2I50nzNQo066VAXdp7mIXAW3dSoKFp/gD24gxkq&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;"><table key="subject">
+<elem key="commonName">Huawei Technologies Co., Ltd</elem>
+<elem key="countryName">CN</elem>
+<elem key="emailAddress">support@huawei.com</elem>
+<elem key="organizationName">Huawei Technologies Co., Ltd</elem>
+<elem key="organizationalUnitName">ONT</elem>
+<elem key="stateOrProvinceName">Guangdong</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">Huawei Technologies Co., Ltd</elem>
+<elem key="countryName">CN</elem>
+<elem key="emailAddress">support@huawei.com</elem>
+<elem key="organizationName">Huawei Technologies Co., Ltd</elem>
+<elem key="stateOrProvinceName">Guangdong</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">2048</elem>
+<elem key="modulus">A77F48E99A71026FBBC6F37760AC02C9C6D48AEAED5C42A612F303047CFD8E33C8BA1CD2BD15D746825F76F75A6D8D0B96D3748333A3841C387701E7286B2DBA23960E755B2207F959B362EF0F99A8F0D6C2719055AA539091CF7932D86614DD0862D93E88BCF5AD8F1BCF7CD8C1ACFF4CEE4C95FDD5D4A4CCB29F23B1FF20064DE3C3B070F8B0D394F6EA6645147B2000FD3669D2A87046BFD13C4E3206C6B45AB5D5E01E23505ABC9A9033F6971209DD63900690C22E46138EED3A5E30C2DCFB5CFA16BB75C27DF5B2679F942EB7017DD077E728BD11281E5C81B4746E7C677EFE648E014A3B7F51432A938EE4A968BC4EAE943394298587EF38645A5F433B</elem>
+<elem key="exponent">65537</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="value">CA:FALSE</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2014-12-05T10:33:44</elem>
+<elem key="notAfter">2024-12-04T10:33:44</elem>
+</table>
+<elem key="md5">67e9299f4c546c23cd0e97eccee1f7d0</elem>
+<elem key="sha1">80a28e9e1ac06b24f2cf9ecd65bff5230da3110e</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIDvDCCAqSgAwIBAgIBAjANBgkqhkiG9w0BAQsFADCBkjElMCMGA1UEAxMcSHVh&#xa;d2VpIFRlY2hub2xvZ2llcyBDby4sIEx0ZDESMBAGA1UECBMJR3Vhbmdkb25nMQsw&#xa;CQYDVQQGEwJDTjEhMB8GCSqGSIb3DQEJARYSc3VwcG9ydEBodWF3ZWkuY29tMSUw&#xa;IwYDVQQKExxIdWF3ZWkgVGVjaG5vbG9naWVzIENvLiwgTHRkMB4XDTE0MTIwNTEw&#xa;MzM0NFoXDTI0MTIwNDEwMzM0NFowgaAxJTAjBgNVBAMTHEh1YXdlaSBUZWNobm9s&#xa;b2dpZXMgQ28uLCBMdGQxEjAQBgNVBAgTCUd1YW5nZG9uZzELMAkGA1UEBhMCQ04x&#xa;ITAfBgkqhkiG9w0BCQEWEnN1cHBvcnRAaHVhd2VpLmNvbTElMCMGA1UEChMcSHVh&#xa;d2VpIFRlY2hub2xvZ2llcyBDby4sIEx0ZDEMMAoGA1UECxMDT05UMIIBIjANBgkq&#xa;hkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp39I6ZpxAm+7xvN3YKwCycbUiurtXEKm&#xa;EvMDBHz9jjPIuhzSvRXXRoJfdvdabY0LltN0gzOjhBw4dwHnKGstuiOWDnVbIgf5&#xa;WbNi7w+ZqPDWwnGQVapTkJHPeTLYZhTdCGLZPoi89a2PG8982MGs/0zuTJX91dSk&#xa;zLKfI7H/IAZN48OwcPiw05T26mZFFHsgAP02adKocEa/0TxOMgbGtFq11eAeI1Ba&#xa;vJqQM/aXEgndY5AGkMIuRhOO7TpeMMLc+1z6Frt1wn31smeflC63AX3Qd+covREo&#xa;HlyBtHRufGd+/mSOAUo7f1FDKpOO5KlovE6ulDOUKYWH7zhkWl9DOwIDAQABow0w&#xa;CzAJBgNVHRMEAjAAMA0GCSqGSIb3DQEBCwUAA4IBAQCMGRy+fnQFa0jhK4NDBK6T&#xa;mmkeHq5vcx/CHi4easVlyCjIbyjaSdaX/GMnWarfOaQ0nzKi0WYpH4T7UUmchFYq&#xa;/RfU4E2/XeNOSJZ0v4D0JV5yOERTwASF5ocS98tdsGN+SKjSwd2wr1EM7k/aN8zF&#xa;ju3pbYG0VdJ+dVMMCKYtdWZFxZm0gAE6X0+vZhOzXgvzv0bpodgFBWKZcKEGwyWY&#xa;dxhti2xxELzsmAGhv45Rw0VEwWHMIYPzEFfavu7c2JRwikKYZPhA+2pKpgSZF6s2&#xa;Iza78UY82Jz8a6LN9I0n7vbbD2I50nzNQo066VAXdp7mIXAW3dSoKFp/gD24gxkq&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="ssl-date" output="TLS randomness does not represent time"></script></port>
+<port protocol="tcp" portid="37443"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="upnp" product="Portable SDK for UPnP devices" version="1.6.18" extrainfo="Linux 3.10.53-HULK2; UPnP 1.0" ostype="Linux" method="probed" conf="10"><cpe>cpe:/o:linux:linux_kernel:3.10.53-hulk2</cpe></service></port>
+<port protocol="tcp" portid="37444"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="upnp" product="Portable SDK for UPnP devices" version="1.6.18" extrainfo="Linux 3.10.53-HULK2; UPnP 1.0" ostype="Linux" method="probed" conf="10"><cpe>cpe:/o:linux:linux_kernel:3.10.53-hulk2</cpe></service></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="23"/>
+<osmatch name="Oracle Virtualbox Slirp NAT bridge" accuracy="93" line="98665">
+<osclass type="bridge" vendor="Oracle" osfamily="Virtualbox" accuracy="93"><cpe>cpe:/o:oracle:virtualbox</cpe></osclass>
+<osclass type="bridge" vendor="Slirp" osfamily="Slirp" accuracy="93"><cpe>cpe:/a:danny_gasparovski:slirp</cpe></osclass>
+</osmatch>
+<osmatch name="QEMU user mode network gateway" accuracy="93" line="100489">
+<osclass type="general purpose" vendor="QEMU" osfamily="QEMU" accuracy="93"><cpe>cpe:/a:qemu:qemu</cpe></osclass>
+</osmatch>
+<osmatch name="AT&amp;T BGW210 voice gateway" accuracy="90" line="9785">
+<osclass type="VoIP adapter" vendor="AT&amp;T" osfamily="embedded" accuracy="90"/>
+</osmatch>
+<osmatch name="Cisco IP Phone 7912-series" accuracy="89" line="16389">
+<osclass type="VoIP phone" vendor="Cisco" osfamily="embedded" accuracy="89"><cpe>cpe:/h:cisco:unified_ip_phone_7912</cpe></osclass>
+</osmatch>
+<osmatch name="Sitecom WL-174 wireless ADSL router or ZyXEL B-3000 WAP" accuracy="87" line="104721">
+<osclass type="WAP" vendor="Sitecom" osfamily="embedded" accuracy="87"><cpe>cpe:/h:sitecom:wl-174</cpe></osclass>
+<osclass type="WAP" vendor="ZyXEL" osfamily="embedded" accuracy="87"><cpe>cpe:/h:zyxel:b-3000</cpe></osclass>
+</osmatch>
+<osmatch name="Samsung CLP-310N or CLX-3175RW, or Xerox Phaser 6110 printer" accuracy="87" line="102617">
+<osclass type="printer" vendor="Samsung" osfamily="embedded" accuracy="87"><cpe>cpe:/h:samsung:clp-310n</cpe><cpe>cpe:/h:samsung:clx-3175rw</cpe></osclass>
+<osclass type="printer" vendor="Xerox" osfamily="embedded" accuracy="87"><cpe>cpe:/h:xerox:phaser_6110</cpe></osclass>
+</osmatch>
+<osmatch name="ZyXEL Prestige 660R ADSL router" accuracy="87" line="114385">
+<osclass type="broadband router" vendor="ZyXEL" osfamily="embedded" accuracy="87"><cpe>cpe:/h:zyxel:prestige_660r</cpe></osclass>
+</osmatch>
+<osmatch name="Samsung CLX-3160FN printer" accuracy="87" line="102741">
+<osclass type="printer" vendor="Samsung" osfamily="embedded" accuracy="87"><cpe>cpe:/h:samsung:clx-3160fn</cpe></osclass>
+</osmatch>
+<osmatch name="Slingmedia Slingbox AV TV over IP gateway" accuracy="86" line="104959">
+<osclass type="media device" vendor="Sling" osfamily="embedded" accuracy="86"><cpe>cpe:/h:slingmedia:slingbox_av</cpe></osclass>
+</osmatch>
+<osmatch name="GNU Hurd 0.3" accuracy="85" line="32532">
+<osclass type="general purpose" vendor="GNU" osfamily="Hurd" accuracy="85"><cpe>cpe:/o:gnu:hurd</cpe></osclass>
+</osmatch>
+<osfingerprint fingerprint="SCAN(V=7.95%E=4%D=9/26%OT=23%CT=%CU=%PV=Y%DS=1%DC=T%G=N%TM=68D6962C%P=x86_64-pc-linux-gnu)&#xa;SEQ(TI=RD%CI=I%TS=U)&#xa;SEQ(SP=13%GCD=FA00%ISR=9C%TI=I%CI=I%TS=U)&#xa;ECN(R=N)&#xa;T1(R=Y%DF=N%TG=40%S=O%A=S+%F=AS%RD=0%Q=)&#xa;T2(R=Y%DF=N%TG=FF%W=0%S=Z%A=S%F=AR%O=%RD=0%Q=)&#xa;T3(R=Y%DF=N%TG=FF%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)&#xa;T4(R=Y%DF=N%TG=FF%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)&#xa;T6(R=Y%DF=N%TG=FF%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)&#xa;T7(R=Y%DF=N%TG=FF%W=0%S=Z%A=S%F=AR%O=%RD=0%Q=)&#xa;U1(R=N)&#xa;IE(R=N)&#xa;"/>
+</os>
+<distance value="1"/>
+<ipidsequence class="Randomized" values="C822,C82D,C824"/>
+<tcptssequence class="none returned (unsupported)"/>
+<trace port="80" proto="tcp">
+<hop ttl="1" ipaddr="192.168.100.1" rtt="2.00"/>
+</trace>
+<times srtt="2929" rttvar="2180" to="100000"/>
+</host>
+<taskbegin task="NSE" time="1758893612"/>
+<taskend task="NSE" time="1758893612"/>
+<taskbegin task="NSE" time="1758893612"/>
+<taskend task="NSE" time="1758893612"/>
+<taskbegin task="NSE" time="1758893612"/>
+<taskend task="NSE" time="1758893612"/>
+<runstats><finished time="1758893612" timestr="Fri Sep 26 16:33:32 2025" summary="Nmap done at Fri Sep 26 16:33:32 2025; 1 IP address (1 host up) scanned in 75.48 seconds" elapsed="75.48" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

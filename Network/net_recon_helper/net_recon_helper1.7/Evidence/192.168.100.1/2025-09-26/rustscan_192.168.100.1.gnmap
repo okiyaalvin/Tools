@@ -1,0 +1,5 @@
+# Nmap 7.95 scan initiated Fri Sep 26 16:32:17 2025 as: /usr/lib/nmap/nmap -vvv -p 23,53,80,17998,37444,37443 -4 -sV -A -oA Evidence/192.168.100.1/2025-09-26/rustscan_192.168.100.1 192.168.100.1
+# Ports scanned: TCP(6;23,53,80,17998,37443-37444) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 192.168.100.1 ()	Status: Up
+Host: 192.168.100.1 ()	Ports: 23/open/tcp//telnet//Huawei Home Gateway telnetd/, 53/open/tcp//domain//Unbound/, 80/open/tcp//ssl|http///, 17998/open/tcp//ssl|unknown///, 37443/open/tcp//upnp//Portable SDK for UPnP devices 1.6.18 (Linux 3.10.53-HULK2; UPnP 1.0)/, 37444/open/tcp//upnp//Portable SDK for UPnP devices 1.6.18 (Linux 3.10.53-HULK2; UPnP 1.0)/	IP ID Seq: Randomized
+# Nmap done at Fri Sep 26 16:33:32 2025 -- 1 IP address (1 host up) scanned in 75.48 seconds

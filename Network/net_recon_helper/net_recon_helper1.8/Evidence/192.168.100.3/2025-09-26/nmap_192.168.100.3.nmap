@@ -1,0 +1,8 @@
+# Nmap 7.95 scan initiated Fri Sep 26 17:08:52 2025 as: /usr/lib/nmap/nmap -sV -T3 -Pn -oA Evidence/192.168.100.3/2025-09-26/nmap_192.168.100.3 192.168.100.3
+Nmap scan report for 192.168.100.3
+Host is up (2.3s latency).
+All 1000 scanned ports on 192.168.100.3 are in ignored states.
+Not shown: 1000 closed tcp ports (reset)
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Fri Sep 26 17:09:09 2025 -- 1 IP address (1 host up) scanned in 16.99 seconds

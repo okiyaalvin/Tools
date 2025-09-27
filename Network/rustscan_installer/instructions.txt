@@ -1,0 +1,10 @@
+#📦 How to Use
+# Save the script as install_rustscan.sh
+# Make it executable by running:
+chmod +x install_rustscan.sh
+# Run it:
+./install_rustscan.sh
+
+
+
+

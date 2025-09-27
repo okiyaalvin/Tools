@@ -1,0 +1,10 @@
+OK: Signed Rules of Engagement (RoE)
+OK: Signed Client Consent
+OK: Approved target list (IPs/CIDRs/domains)
+OK: Approved test windows
+OK: Backup/snapshot confirmation for critical systems
+OK: Emergency contact list (phone/email)
+[+] All checklist items confirmed.
+[*] Evidence path: Evidence/192.168.100.1/2025-09-26
+[2025-09-26 15:42:08] Target: 192.168.100.1 | Tool: fping | Command: sudo fping -a -g 192.168.100.1 2>/dev/null > Evidence/192.168.100.1/2025-09-26/fping_192.168.100.1.txt || true | Output: Evidence/192.168.100.1/2025-09-26/fping_192.168.100.1.txt
+[2025-09-26 15:45:13] Target: 192.168.100.1 | Tool: rustscan | Command: sudo rustscan -a "192.168.100.1" --ulimit 5000 -b 500 -- -sV -A -oA Evidence/192.168.100.1/2025-09-26/rustscan_192.168.100.1 | Output: Evidence/192.168.100.1/2025-09-26/rustscan_192.168.100.1.*

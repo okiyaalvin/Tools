@@ -1,0 +1,16 @@
+[2025-09-26 23:04:23] Target: 192.168.100.1
+[2025-09-26 23:04:23] Evidence dir: Evidence/192.168.100.1/2025-09-26/threat_analysis
+[2025-09-26 23:04:26] [*] nuclei detected at: /usr/local/bin/nuclei
+[2025-09-26 23:04:27] [*] nuclei version: [[34mINF[0m] Nuclei Engine Version: v3.4.10 [[34mINF[0m] Nuclei Config Directory: /root/.config/nuclei [[34mINF[0m] Nuclei Cache Directory: /root/.cache/nuclei [[34mINF[0m] PDCP Directory: /root/.pdcp 
+[2025-09-26 23:04:45] EXEC | Tool: nmap-vuln | Cmd: sudo nmap --script vuln -sV "192.168.100.1" -oA "Evidence/192.168.100.1/2025-09-26/threat_analysis/nmap_vuln_192.168.100.1_230445" | Out: Evidence/192.168.100.1/2025-09-26/threat_analysis/nmap_vuln_192.168.100.1_230445.*
+[2025-09-26 23:07:38] [*] Attempting nuclei with -rate...
+[2025-09-26 23:07:39] [!] nuclei with -rate failed (rc=2). stderr: 
+[2025-09-26 23:07:39] [*] Retrying nuclei without -rate...
+[2025-09-26 23:11:41] [✓] nuclei ran without -rate; output: Evidence/192.168.100.1/2025-09-26/threat_analysis/nuclei_192.168.100.1_230738.txt
+[2025-09-26 23:12:02] [*] nuclei detected at: /usr/local/bin/nuclei
+[2025-09-26 23:12:03] [*] nuclei version: [[34mINF[0m] Nuclei Engine Version: v3.4.10 [[34mINF[0m] Nuclei Config Directory: /root/.config/nuclei [[34mINF[0m] Nuclei Cache Directory: /root/.cache/nuclei [[34mINF[0m] PDCP Directory: /root/.pdcp 
+[2025-09-26 23:12:05] EXEC | Tool: nmap-vuln | Cmd: sudo nmap --script vuln -sV "192.168.100.1" -oA "Evidence/192.168.100.1/2025-09-26/threat_analysis/nmap_vuln_192.168.100.1_231205" | Out: Evidence/192.168.100.1/2025-09-26/threat_analysis/nmap_vuln_192.168.100.1_231205.*
+[2025-09-26 23:14:25] [*] Attempting nuclei with -rate...
+[2025-09-26 23:14:26] [!] nuclei with -rate failed (rc=2). stderr: 
+[2025-09-26 23:14:26] [*] Retrying nuclei without -rate...
+[2025-09-26 23:16:47] [✓] nuclei ran without -rate; output: Evidence/192.168.100.1/2025-09-26/threat_analysis/nuclei_192.168.100.1_231425.txt

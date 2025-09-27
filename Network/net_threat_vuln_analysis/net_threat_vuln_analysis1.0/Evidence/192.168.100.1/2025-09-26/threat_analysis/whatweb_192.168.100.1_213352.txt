@@ -1,0 +1,47 @@
+WhatWeb report for [1m[34mhttp://192.168.100.1[0m
+Status    : 200 OK
+Title     : [1m[33m<None>[0m
+IP        : 192.168.100.1
+Country   : [1m[31mRESERVED, ZZ[0m
+
+Summary   : [1mJQuery[0m, [1mPasswordField[0m[[0m[22mconfirm_password,new_password,old_password,txt_Password[0m], [1mScript[0m[[0m[22mJavaScript,text/javascript[0m], [1mX-Frame-Options[0m[[0m[22mSAMEORIGIN[0m]
+
+Detected Plugins:
+[ [1mJQuery[0m ]
+	A fast, concise, JavaScript that simplifies how to traverse 
+	HTML documents, handle events, perform animations, and add 
+	AJAX. 
+
+	Website     : http://jquery.com/
+
+[ [1mPasswordField[0m ]
+	find password fields 
+
+	String       : [1m[36mold_password[0m (from field name)
+	String       : [1m[36mnew_password[0m (from field name)
+	String       : [1m[36mconfirm_password[0m (from field name)
+	String       : [1m[36mtxt_Password[0m (from field name)
+
+[ [1mScript[0m ]
+	This plugin detects instances of script HTML elements and 
+	returns the script language/type. 
+
+	String       : [1m[36mJavaScript,text/javascript[0m
+
+[ [1mX-Frame-Options[0m ]
+	This plugin retrieves the X-Frame-Options value from the 
+	HTTP header. - More Info: 
+	http://msdn.microsoft.com/en-us/library/cc288472%28VS.85%29.
+	aspx
+
+	String       : [1m[36mSAMEORIGIN[0m
+
+HTTP Headers:
+	HTTP/1.1 200 OK
+	Cache-control:no-cache, no-store, max-age=0
+	Content-Type:text/html
+	Pragma:no-cache
+	Transfer-Encoding:chunked
+	X-Frame-Options:SAMEORIGIN
+	Connection:Keep-Alive
+	

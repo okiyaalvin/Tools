@@ -1,0 +1,108 @@
+# Nmap 7.95 scan initiated Fri Sep 26 16:32:17 2025 as: /usr/lib/nmap/nmap -vvv -p 23,53,80,17998,37444,37443 -4 -sV -A -oA Evidence/192.168.100.1/2025-09-26/rustscan_192.168.100.1 192.168.100.1
+Nmap scan report for 192.168.100.1
+Host is up, received reset ttl 255 (0.0029s latency).
+Scanned at 2025-09-26 16:32:31 EAT for 61s
+
+PORT      STATE SERVICE     REASON         VERSION
+23/tcp    open  telnet      syn-ack ttl 64 Huawei Home Gateway telnetd
+53/tcp    open  domain      syn-ack ttl 64 Unbound
+80/tcp    open  ssl/http    syn-ack ttl 64
+| http-methods: 
+|_  Supported Methods: GET POST
+|_http-title: Site doesn't have a title (text/html).
+| ssl-cert: Subject: commonName=Huawei Technologies Co., Ltd/organizationName=Huawei Technologies Co., Ltd/stateOrProvinceName=Guangdong/countryName=CN/organizationalUnitName=ONT/emailAddress=support@huawei.com
+| Issuer: commonName=Huawei Technologies Co., Ltd/organizationName=Huawei Technologies Co., Ltd/stateOrProvinceName=Guangdong/countryName=CN/emailAddress=support@huawei.com
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2014-12-05T10:33:44
+| Not valid after:  2024-12-04T10:33:44
+| MD5:   67e9:299f:4c54:6c23:cd0e:97ec:cee1:f7d0
+| SHA-1: 80a2:8e9e:1ac0:6b24:f2cf:9ecd:65bf:f523:0da3:110e
+| -----BEGIN CERTIFICATE-----
+| MIIDvDCCAqSgAwIBAgIBAjANBgkqhkiG9w0BAQsFADCBkjElMCMGA1UEAxMcSHVh
+| d2VpIFRlY2hub2xvZ2llcyBDby4sIEx0ZDESMBAGA1UECBMJR3Vhbmdkb25nMQsw
+| CQYDVQQGEwJDTjEhMB8GCSqGSIb3DQEJARYSc3VwcG9ydEBodWF3ZWkuY29tMSUw
+| IwYDVQQKExxIdWF3ZWkgVGVjaG5vbG9naWVzIENvLiwgTHRkMB4XDTE0MTIwNTEw
+| MzM0NFoXDTI0MTIwNDEwMzM0NFowgaAxJTAjBgNVBAMTHEh1YXdlaSBUZWNobm9s
+| b2dpZXMgQ28uLCBMdGQxEjAQBgNVBAgTCUd1YW5nZG9uZzELMAkGA1UEBhMCQ04x
+| ITAfBgkqhkiG9w0BCQEWEnN1cHBvcnRAaHVhd2VpLmNvbTElMCMGA1UEChMcSHVh
+| d2VpIFRlY2hub2xvZ2llcyBDby4sIEx0ZDEMMAoGA1UECxMDT05UMIIBIjANBgkq
+| hkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp39I6ZpxAm+7xvN3YKwCycbUiurtXEKm
+| EvMDBHz9jjPIuhzSvRXXRoJfdvdabY0LltN0gzOjhBw4dwHnKGstuiOWDnVbIgf5
+| WbNi7w+ZqPDWwnGQVapTkJHPeTLYZhTdCGLZPoi89a2PG8982MGs/0zuTJX91dSk
+| zLKfI7H/IAZN48OwcPiw05T26mZFFHsgAP02adKocEa/0TxOMgbGtFq11eAeI1Ba
+| vJqQM/aXEgndY5AGkMIuRhOO7TpeMMLc+1z6Frt1wn31smeflC63AX3Qd+covREo
+| HlyBtHRufGd+/mSOAUo7f1FDKpOO5KlovE6ulDOUKYWH7zhkWl9DOwIDAQABow0w
+| CzAJBgNVHRMEAjAAMA0GCSqGSIb3DQEBCwUAA4IBAQCMGRy+fnQFa0jhK4NDBK6T
+| mmkeHq5vcx/CHi4easVlyCjIbyjaSdaX/GMnWarfOaQ0nzKi0WYpH4T7UUmchFYq
+| /RfU4E2/XeNOSJZ0v4D0JV5yOERTwASF5ocS98tdsGN+SKjSwd2wr1EM7k/aN8zF
+| ju3pbYG0VdJ+dVMMCKYtdWZFxZm0gAE6X0+vZhOzXgvzv0bpodgFBWKZcKEGwyWY
+| dxhti2xxELzsmAGhv45Rw0VEwWHMIYPzEFfavu7c2JRwikKYZPhA+2pKpgSZF6s2
+| Iza78UY82Jz8a6LN9I0n7vbbD2I50nzNQo066VAXdp7mIXAW3dSoKFp/gD24gxkq
+|_-----END CERTIFICATE-----
+|_ssl-date: TLS randomness does not represent time
+17998/tcp open  ssl/unknown syn-ack ttl 64
+| ssl-cert: Subject: commonName=Huawei Technologies Co., Ltd/organizationName=Huawei Technologies Co., Ltd/stateOrProvinceName=Guangdong/countryName=CN/organizationalUnitName=ONT/emailAddress=support@huawei.com
+| Issuer: commonName=Huawei Technologies Co., Ltd/organizationName=Huawei Technologies Co., Ltd/stateOrProvinceName=Guangdong/countryName=CN/emailAddress=support@huawei.com
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2014-12-05T10:33:44
+| Not valid after:  2024-12-04T10:33:44
+| MD5:   67e9:299f:4c54:6c23:cd0e:97ec:cee1:f7d0
+| SHA-1: 80a2:8e9e:1ac0:6b24:f2cf:9ecd:65bf:f523:0da3:110e
+| -----BEGIN CERTIFICATE-----
+| MIIDvDCCAqSgAwIBAgIBAjANBgkqhkiG9w0BAQsFADCBkjElMCMGA1UEAxMcSHVh
+| d2VpIFRlY2hub2xvZ2llcyBDby4sIEx0ZDESMBAGA1UECBMJR3Vhbmdkb25nMQsw
+| CQYDVQQGEwJDTjEhMB8GCSqGSIb3DQEJARYSc3VwcG9ydEBodWF3ZWkuY29tMSUw
+| IwYDVQQKExxIdWF3ZWkgVGVjaG5vbG9naWVzIENvLiwgTHRkMB4XDTE0MTIwNTEw
+| MzM0NFoXDTI0MTIwNDEwMzM0NFowgaAxJTAjBgNVBAMTHEh1YXdlaSBUZWNobm9s
+| b2dpZXMgQ28uLCBMdGQxEjAQBgNVBAgTCUd1YW5nZG9uZzELMAkGA1UEBhMCQ04x
+| ITAfBgkqhkiG9w0BCQEWEnN1cHBvcnRAaHVhd2VpLmNvbTElMCMGA1UEChMcSHVh
+| d2VpIFRlY2hub2xvZ2llcyBDby4sIEx0ZDEMMAoGA1UECxMDT05UMIIBIjANBgkq
+| hkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp39I6ZpxAm+7xvN3YKwCycbUiurtXEKm
+| EvMDBHz9jjPIuhzSvRXXRoJfdvdabY0LltN0gzOjhBw4dwHnKGstuiOWDnVbIgf5
+| WbNi7w+ZqPDWwnGQVapTkJHPeTLYZhTdCGLZPoi89a2PG8982MGs/0zuTJX91dSk
+| zLKfI7H/IAZN48OwcPiw05T26mZFFHsgAP02adKocEa/0TxOMgbGtFq11eAeI1Ba
+| vJqQM/aXEgndY5AGkMIuRhOO7TpeMMLc+1z6Frt1wn31smeflC63AX3Qd+covREo
+| HlyBtHRufGd+/mSOAUo7f1FDKpOO5KlovE6ulDOUKYWH7zhkWl9DOwIDAQABow0w
+| CzAJBgNVHRMEAjAAMA0GCSqGSIb3DQEBCwUAA4IBAQCMGRy+fnQFa0jhK4NDBK6T
+| mmkeHq5vcx/CHi4easVlyCjIbyjaSdaX/GMnWarfOaQ0nzKi0WYpH4T7UUmchFYq
+| /RfU4E2/XeNOSJZ0v4D0JV5yOERTwASF5ocS98tdsGN+SKjSwd2wr1EM7k/aN8zF
+| ju3pbYG0VdJ+dVMMCKYtdWZFxZm0gAE6X0+vZhOzXgvzv0bpodgFBWKZcKEGwyWY
+| dxhti2xxELzsmAGhv45Rw0VEwWHMIYPzEFfavu7c2JRwikKYZPhA+2pKpgSZF6s2
+| Iza78UY82Jz8a6LN9I0n7vbbD2I50nzNQo066VAXdp7mIXAW3dSoKFp/gD24gxkq
+|_-----END CERTIFICATE-----
+|_ssl-date: TLS randomness does not represent time
+37443/tcp open  upnp        syn-ack ttl 64 Portable SDK for UPnP devices 1.6.18 (Linux 3.10.53-HULK2; UPnP 1.0)
+37444/tcp open  upnp        syn-ack ttl 64 Portable SDK for UPnP devices 1.6.18 (Linux 3.10.53-HULK2; UPnP 1.0)
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+OS fingerprint not ideal because: Missing a closed TCP port so results incomplete
+Aggressive OS guesses: Oracle Virtualbox Slirp NAT bridge (93%), QEMU user mode network gateway (93%), AT&T BGW210 voice gateway (90%), Cisco IP Phone 7912-series (89%), Sitecom WL-174 wireless ADSL router or ZyXEL B-3000 WAP (87%), Samsung CLP-310N or CLX-3175RW, or Xerox Phaser 6110 printer (87%), ZyXEL Prestige 660R ADSL router (87%), Samsung CLX-3160FN printer (87%), Slingmedia Slingbox AV TV over IP gateway (86%), GNU Hurd 0.3 (85%)
+No exact OS matches for host (test conditions non-ideal).
+TCP/IP fingerprint:
+SCAN(V=7.95%E=4%D=9/26%OT=23%CT=%CU=%PV=Y%DS=1%DC=T%G=N%TM=68D6962C%P=x86_64-pc-linux-gnu)
+SEQ(TI=RD%CI=I%TS=U)
+SEQ(SP=13%GCD=FA00%ISR=9C%TI=I%CI=I%TS=U)
+ECN(R=N)
+T1(R=Y%DF=N%TG=40%S=O%A=S+%F=AS%RD=0%Q=)
+T2(R=Y%DF=N%TG=FF%W=0%S=Z%A=S%F=AR%O=%RD=0%Q=)
+T3(R=Y%DF=N%TG=FF%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)
+T4(R=Y%DF=N%TG=FF%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)
+T6(R=Y%DF=N%TG=FF%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)
+T7(R=Y%DF=N%TG=FF%W=0%S=Z%A=S%F=AR%O=%RD=0%Q=)
+U1(R=N)
+IE(R=N)
+
+Network Distance: 1 hop
+IP ID Sequence Generation: Randomized
+Service Info: OS: Linux; Device: broadband router; CPE: cpe:/o:linux:linux_kernel:3.10.53-hulk2
+
+TRACEROUTE (using port 80/tcp)
+HOP RTT     ADDRESS
+1   2.00 ms 192.168.100.1
+
+Read data files from: /usr/share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Fri Sep 26 16:33:32 2025 -- 1 IP address (1 host up) scanned in 75.48 seconds

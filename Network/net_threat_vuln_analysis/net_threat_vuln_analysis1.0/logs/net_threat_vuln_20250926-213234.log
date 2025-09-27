@@ -1,0 +1,12 @@
+=== OpenBash Pentesting Tools - Threat modeling & Vulnerability analysis ===
+[2025-09-26 21:32:34] Start: 2025-09-26 21:32:34
+[2025-09-26 21:32:34] Log file: logs/net_threat_vuln_20250926-213234.log
+[2025-09-26 21:32:39] Pre-check OK: Signed RoE/authorization
+[2025-09-26 21:32:40] Pre-check OK: Approved target list (IP/CIDR/domain)
+[2025-09-26 21:32:41] Pre-check OK: Approved test windows
+[2025-09-26 21:33:08] Target: 192.168.100.1
+[2025-09-26 21:33:08] Evidence dir: Evidence/192.168.100.1/2025-09-26/threat_analysis
+[2025-09-26 21:33:52] EXEC | Tool: whatweb | Cmd: sudo whatweb -v "192.168.100.1" | tee "Evidence/192.168.100.1/2025-09-26/threat_analysis/whatweb_192.168.100.1_213352.txt" | Out: Evidence/192.168.100.1/2025-09-26/threat_analysis/whatweb_192.168.100.1_213352.txt
+[2025-09-26 21:38:17] [*] Running default install: go install -v github.com/projectdiscovery/nuclei/v2/cmd/nuclei@latest || true
+[2025-09-26 21:38:17] [-] Tool 'nuclei' still not available after install attempt.
+[2025-09-26 21:38:35] EXEC | Tool: nmap-vuln | Cmd: sudo nmap --script vuln -sV -p 1-65535 "192.168.100.1" -oA "Evidence/192.168.100.1/2025-09-26/threat_analysis/nmap_vuln_192.168.100.1_213835" | Out: Evidence/192.168.100.1/2025-09-26/threat_analysis/nmap_vuln_192.168.100.1_213835.*
